@@ -1,83 +1,206 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sassy Side</title>
+  <title>Two Sassy Spoons</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    * { box-sizing:border-box; scroll-behavior:smooth; }
+
     body {
       margin:0;
       font-family: Montserrat, sans-serif;
-      background:#2B1638;
-      color:#F6E7D8;
+      background:#F7C6D9;
+      color:#4A2C2A;
     }
 
-    .section {
-      padding:70px 20px;
+    h1,h2,h3 { font-family:'Playfair Display', serif; }
+
+    h1 { font-size:56px; margin:10px 0; }
+    h2 { font-size:36px; margin:10px 0; }
+
+    nav {
+      position:sticky;
+      top:0;
+      background:#FFF7F1;
+      padding:15px 25px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo {
+      font-size:22px;
+      font-family:'Playfair Display';
+    }
+
+    .nav-links a {
+      margin-left:15px;
+      text-decoration:none;
+      color:#4A2C2A;
+      font-size:14px;
+    }
+
+    .hero {
       text-align:center;
+      padding:80px 20px;
+      background:linear-gradient(rgba(247,198,217,0.7), rgba(247,198,217,0.9)), url('cake1.jpg');
+      background-size:cover;
+      background-position:center;
     }
 
     .btn {
       padding:14px 30px;
-      background:#F6E7D8;
-      color:#2B1638;
+      background:#B76E91;
+      color:white;
       border-radius:40px;
       text-decoration:none;
       display:inline-block;
+      margin:10px;
+    }
+
+    .outline-btn {
+      background:none;
+      border:1px solid #4A2C2A;
+      color:#4A2C2A;
+    }
+
+    .section {
+      padding:60px 20px;
+      text-align:center;
     }
 
     .grid {
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
       gap:20px;
       max-width:1000px;
       margin:auto;
     }
 
     .card {
-      background:#3A1F2D;
+      background:#FFF7F1;
       padding:15px;
       border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
     }
 
-    img {
+    .card img {
       width:100%;
+      height:220px;
+      object-fit:cover;
       border-radius:15px;
+    }
+
+    .feature-box {
+      background:#FFF7F1;
+      padding:40px;
+      border-radius:25px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    footer {
+      background:#4A2C2A;
+      color:white;
+      padding:25px;
+      text-align:center;
+      font-size:13px;
     }
   </style>
 </head>
 
 <body>
 
-<section class="section">
-  <h1>The Sassy Side</h1>
-  <p>Bold. Creative. Unapologetic.</p>
+<!-- NAV -->
+<nav>
+  <div class="logo">Two Sassy Spoons</div>
 
-  <a href="index.html" class="btn">Back to Sweet</a>
+  <div class="nav-links">
+    <a href="#sweet">Sweet</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Two Sassy Spoons</h1>
+  <p>Custom desserts & dessert catering</p>
+
+  <a href="#sweet" class="btn">Explore Sweet Side</a>
+  <a href="#menu" class="btn outline-btn">View Menu</a>
 </section>
 
+<!-- FEATURE -->
 <section class="section">
+  <div class="feature-box">
+    <h2>Desserts Designed With Love</h2>
+    <p>
+      From elegant cakes to custom desserts, every order is crafted with intention,
+      flavor, and detail to make your moments unforgettable.
+    </p>
+  </div>
+</section>
+
+<!-- SWEET GALLERY -->
+<section class="section" id="sweet">
+  <h2>The Sweet Side</h2>
+
   <div class="grid">
 
     <div class="card">
-      <img src="cupcake1.jpg">
-      <h3>Luxury Cupcakes</h3>
+      <img src="cake1.jpg">
+      <h3>Cakes</h3>
     </div>
 
     <div class="card">
-      <img src="cupcake2.jpg">
-      <h3>Bold Designs</h3>
+      <img src="sweet1.jpg">
+      <h3>Cupcakes</h3>
     </div>
 
     <div class="card">
-      <img src="cupcake3.jpg">
-      <h3>Dark Icing</h3>
+      <img src="sweet2.jpg">
+      <h3>Cookies</h3>
+    </div>
+
+    <div class="card">
+      <img src="sweet3.jpg">
+      <h3>Popcorn</h3>
     </div>
 
   </div>
 </section>
+
+<!-- MENU -->
+<section class="section" id="menu">
+  <h2>Custom Orders</h2>
+
+  <p style="max-width:700px; margin:auto;">
+    We specialize in custom desserts and dessert catering.  
+    Personalized menus can be created to match your theme and vision.
+  </p>
+
+  <a href="#contact" class="btn">Book Now</a>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <p>Orlando & Central Florida</p>
+  <p>689-237-5744</p>
+  <p>twosassyspoons@yahoo.com</p>
+
+  <a href="tel:6892375744" class="btn">Call Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  TWO SASSY SPOONS • SWEET SIDE • CUSTOM DESSERTS
+</footer>
 
 </body>
 </html>
