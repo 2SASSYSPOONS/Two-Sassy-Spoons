@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Sassy Side | Two Sassy Spoons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing:border-box; scroll-behavior:smooth; }
+
+    body {
+      margin:0;
+      font-family: Montserrat, sans-serif;
+      background:#2B1638;
+      color:#F6E7D8;
+    }
+
+    h1,h2,h3 { font-family:'Playfair Display', serif; }
+
+    h1 { font-size:60px; margin:10px 0; }
+    h2 { font-size:40px; margin:10px 0; }
+
+    nav {
+      position:sticky;
+      top:0;
+      background:#1A0F24;
+      padding:15px 25px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo {
+      font-family:'Playfair Display';
+      font-size:24px;
+    }
+
+    .nav-links a {
+      color:#F6E7D8;
+      margin-left:15px;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .section {
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .hero {
+      background:linear-gradient(rgba(43,22,56,0.85), rgba(10,5,15,0.9)), url('cupcake1.jpg');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .btn {
+      padding:14px 30px;
+      background:#B76E91;
+      color:white;
+      border-radius:40px;
+      text-decoration:none;
+      display:inline-block;
+      margin:10px;
+    }
+
+    .light-btn {
+      background:#F6E7D8;
+      color:#2B1638;
+    }
+
+    .outline-btn {
+      background:none;
+      border:1px solid #F6E7D8;
+      color:#F6E7D8;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .card {
+      background:#3A1F2D;
+      padding:15px;
+      border-radius:20px;
+    }
+
+    .card img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:15px;
+    }
+
+    .feature-box {
+      background:#F6E7D8;
+      color:#2B1638;
+      padding:40px;
+      border-radius:25px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    footer {
+      background:#0F0A14;
+      padding:30px;
+      text-align:center;
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">The Sassy Side</div>
+
+  <div class="nav-links">
+    <a href="index.html">Sweet</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#custom">Custom</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="section hero">
+  <h1>The Sassy Side</h1>
+  <p>Bold. Creative. Unforgettable.</p>
+
+  <a href="#gallery" class="btn">View Collection</a>
+  <a href="#custom" class="btn outline-btn">Custom 3D Cakes</a>
+  <a href="index.html" class="btn light-btn">Back To Sweet</a>
+</section>
+
+<!-- FEATURE -->
+<section class="section">
+  <div class="feature-box">
+    <h2>Where Dessert Meets Art</h2>
+    <p>
+      This side of Two Sassy Spoons is for bold clients who want more than just dessert.
+      Think sculpted cakes, dramatic cupcakes, deep colors, and unforgettable designs.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <h2>Sassy Creations</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="cupcake1.jpg">
+      <h3>Luxury Cupcakes</h3>
+      <p>Dark tones, sculpted frosting, bold finishes.</p>
+    </div>
+
+    <div class="card">
+      <img src="cupcake2.jpg">
+      <h3>Bold Designs</h3>
+      <p>Rich color, drip icing, dramatic detail.</p>
+    </div>
+
+    <div class="card">
+      <img src="cupcake3.jpg">
+      <h3>Dark Icing</h3>
+      <p>Deep tones with a luxury edge.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CUSTOM -->
+<section class="section" id="custom">
+  <h2>Custom 3D Creations</h2>
+
+  <p style="max-width:700px; margin:auto;">
+    Perfect for statement events, themed parties, and clients who want dessert to be the centerpiece.
+    Each design is fully customized to your vision.
+  </p>
+
+  <a href="#contact" class="btn">Start a Sassy Order</a>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <p>Orlando & Central Florida</p>
+  <p>689-237-5744</p>
+  <p>twosassyspoons@yahoo.com</p>
+
+  <a href="tel:6892375744" class="btn">Call Now</a>
+  <a href="index.html" class="btn outline-btn">Back To Sweet</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  TWO SASSY SPOONS • THE SASSY SIDE • BOLD DESSERT CREATIONS
+</footer>
+
+</body>
+</html>
