@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
+
   <style>
     * { box-sizing:border-box; scroll-behavior:smooth; }
 
@@ -15,11 +15,6 @@
       background:#F7C6D9;
       color:#4A2C2A;
     }
-
-    .dark-btn {
-  background:#2B1638;
-  color:#F6E7D8;
-}
 
     h1,h2,h3 { font-family:'Playfair Display', serif; }
 
@@ -34,11 +29,12 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
+      z-index:1000;
     }
 
     .logo {
       font-size:22px;
-      font-family:'Playfair Display';
+      font-family:'Playfair Display', serif;
     }
 
     .nav-links a {
@@ -50,52 +46,12 @@
 
     .hero {
       text-align:center;
-      padding:80px 20px;
+      padding:90px 20px;
       background:linear-gradient(rgba(247,198,217,0.7), rgba(247,198,217,0.9)), url('cake1.jpg');
       background-size:cover;
       background-position:center;
     }
 
-<section style="padding:70px 20px; text-align:center; background:#FFF7F1;">
-
-  <p style="letter-spacing:3px; text-transform:uppercase; color:#B76E91; font-size:12px;">
-    Signature Experience
-  </p>
-
-  <h2 style="font-family:'Playfair Display'; font-size:38px; color:#4A2C2A;">
-    Choose Your Side
-  </h2>
-
-  <p style="max-width:600px; margin:auto; color:#4A2C2A;">
-    Soft elegance or bold expression — each side offers a completely different dessert experience.
-  </p>
-
-  <div style="margin-top:35px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-
-    <!-- SWEET BUTTON -->
-    <a href="#sweet" style="
-      padding:16px 34px;
-      background:#F7C6D9;
-      color:#4A2C2A;
-      border-radius:50px;
-      text-decoration:none;
-      border:1px solid #4A2C2A;
-    ">
-      Stay on Sweet Side
-    </a>
-
-    <!-- SASSY BUTTON -->
-    <a href="sassy.html" style="
-      padding:16px 34px;
-      background:#2B1638;
-      color:#F6E7D8;
-      border-radius:50px;
-      text-decoration:none;
-    ">
-    </a>
-
-</section>
-    
     .btn {
       padding:14px 30px;
       background:#B76E91;
@@ -104,6 +60,11 @@
       text-decoration:none;
       display:inline-block;
       margin:10px;
+    }
+
+    .dark-btn {
+      background:#2B1638;
+      color:#F6E7D8;
     }
 
     .outline-btn {
@@ -115,6 +76,12 @@
     .section {
       padding:60px 20px;
       text-align:center;
+    }
+
+    .choice-section {
+      padding:70px 20px;
+      text-align:center;
+      background:#FFF7F1;
     }
 
     .grid {
@@ -159,29 +126,42 @@
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo">Two Sassy Spoons</div>
 
   <div class="nav-links">
     <a href="#sweet">Sweet</a>
     <a href="#menu">Menu</a>
+    <a href="sassy.html">Sassy</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <h1>Two Sassy Spoons</h1>
   <p>Custom desserts & dessert catering</p>
 
   <a href="#sweet" class="btn">Explore Sweet Side</a>
   <a href="#menu" class="btn outline-btn">View Menu</a>
-  <a href="sassy.html" class="btn dark-btn">Enter The Sassy Side</a>
-  
 </section>
 
-<!-- FEATURE -->
+<section class="choice-section">
+  <p style="letter-spacing:3px; text-transform:uppercase; color:#B76E91; font-size:12px;">
+    Signature Experience
+  </p>
+
+  <h2>Choose Your Side</h2>
+
+  <p style="max-width:600px; margin:auto;">
+    Soft elegance or bold expression — each side offers a completely different dessert experience.
+  </p>
+
+  <div style="margin-top:35px;">
+    <a href="#sweet" class="btn">Stay on Sweet Side</a>
+    <a href="sassy.html" class="btn dark-btn">Enter The Sassy Side</a>
+  </div>
+</section>
+
 <section class="section">
   <div class="feature-box">
     <h2>Desserts Designed With Love</h2>
@@ -192,12 +172,10 @@
   </div>
 </section>
 
-<!-- SWEET GALLERY -->
 <section class="section" id="sweet">
   <h2>The Sweet Side</h2>
 
   <div class="grid">
-
     <div class="card">
       <img src="cake1.jpg">
       <h3>Cakes</h3>
@@ -217,23 +195,19 @@
       <img src="sweet3.jpg">
       <h3>Popcorn</h3>
     </div>
-
   </div>
 </section>
 
-<!-- MENU -->
 <section class="section" id="menu">
   <h2>Custom Orders</h2>
 
   <p style="max-width:700px; margin:auto;">
-    We specialize in custom desserts and dessert catering.  
-    Personalized menus can be created to match your theme and vision.
+    We specialize in custom desserts and dessert catering. Personalized menus can be created to match your theme and vision.
   </p>
 
   <a href="#contact" class="btn">Book Now</a>
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
   <h2>Contact</h2>
 
@@ -244,7 +218,6 @@
   <a href="tel:6892375744" class="btn">Call Now</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
   TWO SASSY SPOONS • SWEET SIDE • CUSTOM DESSERTS
 </footer>
