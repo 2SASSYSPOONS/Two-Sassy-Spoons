@@ -121,6 +121,46 @@
       text-align:center;
       font-size:13px;
     }
+    .hero-buttons {
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.btn {
+  padding:16px 36px;
+  border-radius:50px;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+  transition:0.3s ease;
+  display:inline-block;
+}
+
+.btn.primary {
+  background:#B76E91;
+  color:white;
+  box-shadow:0 8px 20px rgba(183,110,145,0.3);
+}
+
+.btn.outline {
+  border:1.5px solid #4A2C2A;
+  color:#4A2C2A;
+  background:transparent;
+}
+
+.btn.dark {
+  background:#2B1638;
+  color:#F6E7D8;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  transform:translateY(-3px);
+  opacity:0.9;
+}
   </style>
 </head>
 
